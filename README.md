@@ -19,13 +19,13 @@ goroutines, and as such are not implemented here.
 
 ## Implentation
 
-This library takes advantage of all the great work of [Celluloid::IO](github.com/celluloid/celluloid-io).
+This library takes advantage of all the great work of [Celluloid::IO](https://github.com/celluloid/celluloid-io).
 If you want details on how this is implemented, you should look at the
 Celluloid::IO link above.
 
 Cellulid::IO implements duck types of many of the Ruby IO libraries.  These are
 implemented with asyncronous IO that can be used without callbacks.  If you are
-using this library with any IO, you should use a the Celluloid::IO duck type so
+using this library with any IO, you should use the Celluloid::IO duck type so
 the goroutine workers are not blocked by IO.
 
 ## Usage
@@ -46,6 +46,7 @@ foo = go { some_long_running_method } # returns instantly
 foo.ready? #=> false
 foo.value # Blocks until done and returns method data
 ```
+You can pass any callable object to `go`, so a proc, a block, a method, etc.
 
 ## Installation
 ```bash
