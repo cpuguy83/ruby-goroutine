@@ -11,7 +11,7 @@ But goroutinues are so much more than new threads to run some piece of code.
 threads, and not new threads in and of themselves.
 3. No callback Async IO - all of Go's IO is asyncronous and used without
 callbacks. The goroutine workers handle the switching for the async IO
-autoamtically.
+automatically.
 
 These other goroutines libraries also tend to have an implementation of Go's
 channels.  While channels are awesome, they aren't neccessary for implementing
