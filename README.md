@@ -48,11 +48,6 @@ foo.value # Blocks until done and returns method data
 ```
 You can pass any callable object to `go`, so a proc, a block, a method, etc.
 
-## Installation
-```bash
-gem install go-scheduler
-```
-
 ## Hacking
 Got Docker? Use the provided Dockerfile.
 This will put you into an IRB console just `require 'go-scheduler'`
