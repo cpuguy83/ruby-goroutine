@@ -1,11 +1,8 @@
-require 'celluloid/test'
-require 'minitest/autorun'
-require 'go-scheduler/worker'
-
+require 'test_helper'
 
 class TestWorker < Minitest::Test
   def setup
-    Celluloid.shutdown if Celluloid.running?
+    Celluloid.shutdown
     Celluloid.boot
   end
 

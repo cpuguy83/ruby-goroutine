@@ -1,3 +1,4 @@
+require 'test_helper'
 require 'go-scheduler/worker'
 
 class GoScheduler

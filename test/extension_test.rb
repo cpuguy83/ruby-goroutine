@@ -1,6 +1,4 @@
-require 'minitest/autorun'
-require 'go-scheduler/scheduler'
-require 'go-scheduler/core_ext'
+require 'test_helper'
 
 class TestCoreExt < Minitest::Test
   class CallableObj

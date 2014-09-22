@@ -15,6 +15,8 @@ GEM
       nio4r (>= 1.0.0)
     hitimes (1.2.2)
     minitest (5.4.1)
+    minitest-rg (5.1.0)
+      minitest (~> 5.0)
     nio4r (1.0.1)
     rake (10.3.2)
     timers (4.0.1)
@@ -25,8 +27,7 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
-  celluloid (= 0.16.0)
-  celluloid-io (= 0.16.0)
   go-scheduler!
   minitest (~> 5.4.1)
+  minitest-rg
   rake (~> 10.0)

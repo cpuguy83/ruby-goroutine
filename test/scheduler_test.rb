@@ -1,12 +1,9 @@
-require 'celluloid/test'
-require 'minitest/autorun'
-require 'go-scheduler/scheduler'
-
+require 'test_helper'
 
 GOMAXPROCS = 2
 class TestWorker < Minitest::Test
   def setup
-    Celluloid.shutdown if Celluloid.running?
+    Celluloid.shutdown
     Celluloid.boot
   end
 
